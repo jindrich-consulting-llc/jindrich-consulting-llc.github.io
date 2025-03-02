@@ -1,0 +1,8 @@
+- name: "Data Analytics"
+  url: "/services/data-analytics"
+- name: "Database Administration"
+  url: "/services/database-administration"
+- name: "Data Engineering"
+  url: "/services/data-engineering"
+- name: "Software Engineering"
+  url: "/services/software-engineering"
