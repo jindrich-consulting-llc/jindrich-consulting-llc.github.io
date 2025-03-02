@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+</head>
+<body>
+<!-- Include the header -->
+{% include header.html %}
+
+<!-- Main content of the page -->
+<main class="container">
+    {{ content }}
+</main>
+
+<!-- Include the footer -->
+{% include footer.html %}
+
+<!-- Optional Bootstrap JS or custom scripts -->
+<script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+</body>
+</html>

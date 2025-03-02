@@ -1,0 +1,21 @@
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .list-inline-item {
+    margin-right: 15px;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
