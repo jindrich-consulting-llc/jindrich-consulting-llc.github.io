@@ -1,9 +1,7 @@
 ---
 layout: home
 title: Home
-banner-button:
-  label: "Contact Us"
-  url: "/contact-us"
+permalink: /
 ---
 
 ## Curiosity and Engineering
@@ -22,4 +20,10 @@ potential.
 We are particularly passionate about projects that have a meaningful impact on the community and drive measurable
 results. We are open to negotiating rates for impactful projects that challenge us and contribute to our company’s
 growth.
+
+## Get Started Today
+
+Discover how our expertise can bring measurable results to your business.
+**Get a Free Quote**
+
 

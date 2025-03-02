@@ -1,7 +1,7 @@
 ---
 layout: contact
-title: Contact
-permalink: /contact/
+title: Contact Us
+permalink: /contact-us/
 ---
 
 ## Let's Connect!

@@ -1,46 +1,55 @@
-<!-- Header Section with Navigation Bar -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Brand Logo or Name -->
-            <a class="navbar-brand" href="/">{{ site.company.name }}</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+                data-mdb-collapse-init
+                class="navbar-toggler"
+                type="button"
+                data-mdb-target="#navbarRightAlignExample"
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
 
-            <!-- Toggle Button for Mobile View -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- Home Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-
-                    <!-- Services Link -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            {% for service in site.data.services %}
-                            <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
-                    <!-- Contact Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                    <a
+                            data-mdb-dropdown-init
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            aria-expanded="false"
+                    >
+                        Services
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for service in site.data.services %}
+                        <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <!-- Left links -->
         </div>
-    </nav>
-</header>
-
-<!-- Optional Bootstrap JS and Popper.js CDN for the Navbar functionality -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
