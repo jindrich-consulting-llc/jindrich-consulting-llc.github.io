@@ -1,0 +1,26 @@
+
+.services-grid {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Custom -->
+    <link href="../assets/css/global_styles.css" rel="stylesheet">
+    <link href="../assets/css/banner_styles.css" rel="stylesheet">
+    <link href="../assets/css/services_styles.css" rel="stylesheet">
     <!-- MDB -->
     <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
 </head>
@@ -12,16 +16,52 @@
 {% include header.html %}
 
 <!-- Main content of the page -->
-<!--<main class="container">-->
-<!--    {{ content }}-->
-<!--</main>-->
+<main>
+
+    <!-- Banner -->
+    <div class="banner">
+        <!-- Banner image -->
+        <div class="banner-image"></div>
+        <!-- Banner text -->
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="banner-content">
+                <h1 class="mb-3">Curiosity and Engineering</h1>
+                <h5 class="mb-3">Success starts with insight. Using data analysis and engineering, we measure progress
+                    and refine strategies to drive
+                    growth. Let’s collaborate to uncover key discoveries and achieve your business goals.</h5>
+                <a data-mdb-ripple-init class="banner-button" href="#!" role="button"
+                >Contact Us</a
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+        <h1>Services</h1>
+        <div class="services-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Building responsive websites and web applications.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">SEO Optimization</h5>
+                    <p class="card-text">Optimizing websites for better search engine rankings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+
+</main>
 
 <!-- Include the footer -->
 {% include footer.html %}
 
 <!-- MDB -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/js/mdb.umd.min.js"></script>
-
-</script>
 </body>
 </html>

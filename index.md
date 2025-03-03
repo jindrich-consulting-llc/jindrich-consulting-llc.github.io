@@ -4,11 +4,6 @@ title: Home
 permalink: /
 ---
 
-## Curiosity and Engineering
-
-Success starts with insight. Using data analysis and engineering, we measure progress and refine strategies to drive
-growth. Let’s collaborate to uncover key discoveries and achieve your business goals.
-
 ## Our Services
 
 ## About Us
