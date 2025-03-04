@@ -1,10 +1,67 @@
-.navbar, .footer {
-    padding-left: 10vh !important;
-    padding-right: 10vh !important;
+:root {
+    /* Primary Colors */
+    --color-primary-bg: #2b3af7;
+    --color-primary-bg-2: #424ff8;
+    --color-primary-bg-3: #702bf7;
+    --color-primary-text: #fdfcf9;
+
+    /* Base Colors */
+    --color-base-bg: #0f0f10;
+    --color-base-bg-2: #1a191c;
+    --color-base-bg-3: #222124;
+    --color-base-text: #F4F4F5;
+    --color-base-text-2: #D1D5DB;
+
+    /* Specific Element Colors */
+    --color-logo-text: #2b3af7;
+    --color-header-text: #f5f5ec;
+
+    /* Header */
+    --header-height: 60px;
+
+    --font-family-heading: Lato, sans-serif;
+
+    /* Nav Menu */
+    --menu-font-family: "Source Sans 3", sans-serif;
+    --menu-font-size: ;
+    --menu-text-transform: "Capitalize";
+    --menu-font-weight: 400;
+
+    /* Button */
+    --button-border-radius: 5px;
 }
 
-.navbar {
-    color: white;
-    background: transparent !important;
-    box-shadow: none !important;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: var(--color-base-bg) !important;
+    color: var(--color-base-text) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Buttons */
+.button {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 28px 9px 28px;
+    background: var(--color-primary-bg);
+    color: var(--color-primary-text);
+    border-radius: var(--button-border-radius);
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-primary-bg-2);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
 }

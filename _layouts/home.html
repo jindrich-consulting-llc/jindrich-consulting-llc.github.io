@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <!-- Custom -->
+
+    <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
-    <link href="../assets/css/banner_styles.css" rel="stylesheet">
+    <link href="../assets/css/header_styles.css" rel="stylesheet">
     <link href="../assets/css/services_styles.css" rel="stylesheet">
-    <!-- MDB -->
+
+    <!-- External styles -->
     <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
+
 </head>
 <body>
 <!-- Include the header -->
@@ -18,50 +21,63 @@
 <!-- Main content of the page -->
 <main>
 
-    <!-- Banner -->
-    <div class="banner">
-        <!-- Banner image -->
-        <div class="banner-image"></div>
-        <!-- Banner text -->
-        <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="banner-content">
-                <h1 class="mb-3">Curiosity and Engineering</h1>
-                <h5 class="mb-3">Success starts with insight. Using data analysis and engineering, we measure progress
-                    and refine strategies to drive
-                    growth. Let’s collaborate to uncover key discoveries and achieve your business goals.</h5>
-                <a data-mdb-ripple-init class="banner-button" href="#!" role="button"
-                >Contact Us</a
-                >
+    <!-- Services -->
+    <div class="services-title">
+        <h3>Services</h3>
+    </div>
+    <div class="services-container">
+        <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
             </div>
         </div>
     </div>
+    <!-- Services -->
 
-    <!-- Services -->
-    <div class="services">
-        <h1>Services</h1>
-        <div class="services-grid">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Web Development</h5>
-                    <p class="card-text">Building responsive websites and web applications.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">SEO Optimization</h5>
-                    <p class="card-text">Optimizing websites for better search engine rankings.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Contact Us -->
+    <div class="contact-title">
+        <h3>Get Started Today</h3>
+        <p>Save time and money using this premium Jekyll theme.</p>
+        <p>Free Quote</p>
+        <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Contact Us</a>
     </div>
-    <!-- Services -->
+    <!-- Contact Us -->
 
 </main>
 
 <!-- Include the footer -->
 {% include footer.html %}
 
-<!-- MDB -->
+<!-- Internal scripts-->
+<script src="../assets/js/navbar-scroll.js"></script>
+<script src="../assets/js/navbar-set-active.js"></script>
+
+<!-- External scripts -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/js/mdb.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

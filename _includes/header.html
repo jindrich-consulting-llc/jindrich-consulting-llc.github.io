@@ -1,62 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-        <!-- Logo -->
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img
-                        src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                        height="20"
-                        alt="MDB Logo"
-                        loading="lazy"
-                />
-            </a>
+<header>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/" onclick="setActive(this)">Home</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                           role="button" aria-expanded="false" onclick="setActive(this)">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            {% for service in site.data.services %}
+                            <li><a class="dropdown-item" href="#">{{ service.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" onclick="setActive(this)">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" onclick="setActive(this)">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Logo -->
+    </nav>
+    <!-- Navbar -->
 
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-            <!-- Left links -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                    <a
-                            data-mdb-dropdown-init
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            aria-expanded="false"
-                    >
-                        Dropdown
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Action</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <!-- Left links -->
+
+    <!-- Banner -->
+    <div>
+        <div class="banner banner-gradient">
+            <div class="banner-image"></div>
         </div>
-        <!-- Collapsible wrapper -->
+        <div class="banner-content-container">
+            <div class="banner-content">
+                <h1 class="mb-3">Curiosity and Engineering</h1>
+                <h5 class="mb-3">Success starts with insight. Using data analysis and engineering, we measure progress
+                    and refine strategies to drive
+                    growth. Let’s collaborate to uncover key discoveries and achieve your business goals.</h5>
+            </div>
+        </div>
     </div>
-    <!-- Container wrapper -->
-</nav>
+</header>
+
