@@ -8,7 +8,7 @@
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
     <link href="../assets/css/header_styles.css" rel="stylesheet">
-    <link href="../assets/css/services_styles.css" rel="stylesheet">
+    <link href="../assets/css/home_styles.css" rel="stylesheet">
 
     <!-- External styles -->
     <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
@@ -22,36 +22,41 @@
 <main>
 
     <!-- Services -->
-    <div class="services-title">
-        <h3>Services</h3>
-    </div>
-    <div class="services-container">
-        <div class="card">
-            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="grid-header grid-header-align-center">
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+
+                {% for service in site.data.services %}
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div id="card">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                <img alt="{{ service.name }}" width="50" height="50"
+                                     src="../assets/img/icons/{{ service.icon }}">
+                            </div>
+                            <div class="card-title">
+                                <h3><a href="{{ service.url }}">{{ service.name }}</a></h3>
+                            </div>
+                            <div class="card-description">
+                                <p>{{ service.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="col-12">
+                    <div class="grid-footer grid-footer-align-center">
+                        <a href="/services" class="grid-view-more-button">
+                            View All Services
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

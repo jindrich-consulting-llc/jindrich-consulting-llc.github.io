@@ -29,6 +29,9 @@
 
     /* Button */
     --button-border-radius: 5px;
+
+    --section-padding: 80px;
+    --section-margin: 180px;
 }
 
 /* Global Styles */

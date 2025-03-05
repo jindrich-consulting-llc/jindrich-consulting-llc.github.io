@@ -1,6 +1,8 @@
 - name: "Data Analytics"
   url: "/services/data-analytics"
+  icon: "icons8-bar-chart-96.png"
   description: "Analyzes performance, customer satisfaction, and historical data, enabling businesses to make informed decisions, optimize strategies, and drive growth."
 - name: "Data Engineering"
   url: "/services/data-engineering"
+  icon: "icons8-database-administrator-96.png"
   description: "Building systems to collect, store, and process data, ensuring its quality and availability for analysis."
