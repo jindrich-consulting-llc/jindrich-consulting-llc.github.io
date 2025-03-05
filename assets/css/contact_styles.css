@@ -10,6 +10,10 @@
     color: var(--color-primary-text) !important;
 }
 
+.form-text h1 {
+    font-weight: 600;
+}
+
 .form-input {
     margin-bottom: 18px;
     width: 70%;
