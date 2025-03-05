@@ -17,8 +17,8 @@ plugins:
 # Site globals
 company:
   name: "Jindrich Consulting LLC"
-  address: "522 W RIVERSIDE AVE # 8571 Spokane, WA 99201"
   email: "jindrich.consulting.llc@gmail.com"
+  address: "522 W RIVERSIDE AVE # 8571 Spokane, WA 99201"
 
 about:
   name: "Pazuzu Jindrich"
