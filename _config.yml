@@ -19,10 +19,3 @@ company:
   name: "Jindrich Consulting LLC"
   email: "jindrich.consulting.llc@gmail.com"
   address: "522 W RIVERSIDE AVE # 8571 Spokane, WA 99201"
-
-about:
-  name: "Pazuzu Jindrich"
-  nickname: "PJ"
-  social_links:
-    linkedin: "https://www.linkedin.com/in/pj-jindrich/"
-    github: "https://github.com/PPjamies"

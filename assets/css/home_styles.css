@@ -54,10 +54,27 @@
     color: var(--color-primary-bg);
 }
 
+/* About */
+.about-section {
+    background: var(--color-base-bg-3);
+    padding-bottom: var(--section-margin);
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Contact */
 .contact-section {
     padding-bottom: var(--section-margin);
-    background: var(--color-base-bg-3);
 }
 
 .contact {
