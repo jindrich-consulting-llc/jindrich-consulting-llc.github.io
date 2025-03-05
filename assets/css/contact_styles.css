@@ -1,0 +1,26 @@
+.contact-container {
+    padding: 180px 0 180px 0;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+    color: var(--color-primary-text) !important;
+}
+
+.form-input {
+    margin-bottom: 18px;
+    width: 70%;
+}
+
+.form-control {
+    border: none !important;
+    background: var(--color-base-bg-3) !important;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--color-primary-text) !important;
+}
