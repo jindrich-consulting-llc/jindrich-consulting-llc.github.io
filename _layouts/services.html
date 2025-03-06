@@ -8,24 +8,19 @@
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
     <link href="../assets/css/header_styles.css" rel="stylesheet">
-    <link href="../assets/css/footer_styles.css" rel="stylesheet">
-    <link href="../assets/css/contact_styles.css" rel="stylesheet">
     <link href="../assets/css/services_styles.css" rel="stylesheet">
-
-
-    <!-- External styles -->
-    <!--    <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">-->
+    <link href="../assets/css/contact_styles.css" rel="stylesheet">
+    <link href="../assets/css/footer_styles.css" rel="stylesheet">
 
 </head>
 <body id="body">
 
-<!-- Include the header -->
 {% include header.html %}
 
-<!-- Main content of the page -->
 <main>
-    <!-- Services -->
-    <div class="card_container">
+
+    <!-- Our Services -->
+    <div class="card-container">
         {% for service in site.data.services %}
         <div class="card">
             <div class="card-img">
@@ -41,32 +36,25 @@
         </div>
         {% endfor %}
     </div>
-    <!-- Services -->
+    <!-- Our Services -->
 
     <!-- Contact Us -->
-    <div class="section contact-section">
-        <div class="container">
-            <div class="contact">
-                <div class="contact-content">
-                    <h2>Let's Connect!</h2>
-                    <p>Contact us today and let’s explore how we can work together.</p>
-                    <a href="/contact-us" class="button" data-mdb-ripple-init>Contact Us</a>
-                </div>
-            </div>
+    <div class="contact-container">
+        <div class="contact-content">
+            <h2>Let's Connect!</h2>
+            <p>Contact us today and let’s explore how we can work together.</p>
+            <a href="/contact-us" class="button" data-mdb-ripple-init>Contact Us</a>
         </div>
     </div>
+    <!-- Contact Us -->
+
 </main>
 
-<!-- Include the footer -->
 {% include footer.html %}
 
 <!-- Internal scripts-->
 <script src="../assets/js/navbar-scroll.js"></script>
 <script src="../assets/js/navbar-set-active.js"></script>
-
-<!-- External scripts -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/js/mdb.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
