@@ -60,24 +60,11 @@
     height: 75vh;
 }
 
-.image {
-    flex: 1;
-    position: relative;
-    height: 100%;
-}
-
-.image-gradient {
-    position: relative;
-    background-image: linear-gradient(to right, var(--color-primary-bg), var(--color-primary-bg-3));
-    z-index: 0;
-}
-
 .about-image {
     flex: 1;
     background-image: url('/assets/img/Gemini_Generated_Image_Food_Bank.jpeg');
     background-size: cover;
     background-position: center;
-    mix-blend-mode: overlay;
     height: 100%;
     z-index: 1;
 }
