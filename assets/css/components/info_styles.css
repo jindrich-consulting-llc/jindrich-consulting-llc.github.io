@@ -14,11 +14,11 @@
     background: var(--color-base-bg-3);
 }
 
-.info h2 {
+.info-container .info h1 {
     font-weight: 600;
     margin-bottom: 0;
 }
 
-.info p {
+.info-container .info p {
     text-align: center;
 }
