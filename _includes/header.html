@@ -13,8 +13,10 @@
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                           role="button" aria-expanded="false" onclick="setActive(this)">Services</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           aria-expanded="false" onclick="setActive(this)">
+                            Services
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             {% for service in site.data.services %}
                             <li><a class="dropdown-item" href="#">{{ service.name }}</a></li>
