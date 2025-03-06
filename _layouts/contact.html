@@ -8,8 +8,8 @@
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
     <link href="../assets/css/header_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/form_styles.css" rel="stylesheet">
     <link href="../assets/css/footer_styles.css" rel="stylesheet">
-    <link href="../assets/css/contact_styles.css" rel="stylesheet">
 
 </head>
 <body id="body">
@@ -19,40 +19,41 @@
 <main>
 
     <!-- Contact Form -->
-    <div class="contact-container">
+    <div class="form-container">
 
-        <div class="form-text">
+        <div class="form-info">
             <h1>Let's Connect!</h1>
             <p>Contact us today and let’s explore how we can work together.</p>
         </div>
 
         <form class="form">
+
             <!-- Name input -->
-            <div data-mdb-input-init class="form-input">
-                <label class="form-label">Name</label>
-                <input class="form-control" type="text" placeholder="Your Name"/>
+            <div class="form-input">
+                <label>Name</label>
+                <input type="text" placeholder="Your Name"/>
             </div>
 
             <!-- Email input -->
-            <div data-mdb-input-init class="form-input">
-                <label class="form-label">Email address</label>
-                <input class="form-control" type="email" placeholder="Your Email"/>
+            <div class="form-input">
+                <label>Email address</label>
+                <input type="email" placeholder="Your Email"/>
             </div>
 
             <!-- Subject input -->
-            <div data-mdb-input-init class="form-input">
-                <label class="form-label">Subject</label>
-                <input class="form-control" type="text" placeholder="Email Subject"/>
+            <div class="form-input">
+                <label>Subject</label>
+                <input type="text" placeholder="Email Subject"/>
             </div>
 
             <!-- Message input -->
-            <div data-mdb-input-init class="form-input">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="8" placeholder="Message"></textarea>
+            <div class="form-input">
+                <label>Message</label>
+                <textarea rows="8" placeholder="Message"></textarea>
             </div>
 
             <!-- Submit button -->
-            <button class="button" type="button" data-mdb-ripple-init>Send</button>
+            <button class="button">Submit</button>
         </form>
 
     </div>
