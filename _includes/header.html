@@ -1,50 +1,53 @@
-<header>
+<div class="nav-bar">
+
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown {% if page.url == '/services' %}active{% endif %}">
-                        <a class="nav-link dropdown-toggle" href="/services" role="button">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            {% for service in site.data.services %}
-                            <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
-                    <li class="nav-item {% if page.url == '/contact-us' %}active{% endif %}">
-                        <a class="nav-link" href="/contact-us">Contact Us</a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="logo-img">
+            <img src="../assets/img/logo/Gemini_Generated_Logo.jpeg" alt="Company Logo">
+            <a href="/"></a>
         </div>
-    </nav>
-    <!-- Navbar -->
 
+        <ul class="nav-list">
+
+            <!-- Home -->
+            <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown {% if page.url == '/services' %}active{% endif %}">
+                <a class="nav-link" href="/services">Services</a>
+                <ul class="dropdown-menu">
+                    {% for service in site.data.services %}
+                    <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item {% if page.url == '/contact-us' %}active{% endif %}">
+                <a class="nav-link" href="/contact-us">Contact Us</a>
+            </li>
+
+        </ul>
 
     <!-- Banner -->
-    <div>
-        <div class="banner banner-gradient">
-            <div class="banner-image"></div>
-        </div>
-        <div class="banner-content-container">
-            <div class="banner-content">
-                <h1 class="mb-3">Curiosity and Engineering</h1>
-                <h5 class="mb-3">Success starts with insight. Using data analysis and engineering, we measure progress
-                    and refine strategies to drive
-                    growth. Let’s collaborate to uncover key discoveries and achieve your business goals.</h5>
-            </div>
-        </div>
-    </div>
-</header>
-
+<!--    <div class="banner">-->
+<!--        <div class="banner-gradient">-->
+<!--            <img src="../assets/img/Gemini_Generated_Image_Engineers.jpeg" alt="Engineers at work">-->
+<!--        </div>-->
+<!--        <div class="banner-content">-->
+<!--            {% if page.url == '/' %}-->
+<!--            <h1>Curiosity and Engineering</h1>-->
+<!--            <h5>-->
+<!--                Success starts with insight. Using data analysis and engineering, we measure progress-->
+<!--                and refine strategies to drive growth. Let’s collaborate to uncover key discoveries and achieve your-->
+<!--                business goals.-->
+<!--            </h5>-->
+<!--            {% elsif page.url == '/services' %}-->
+<!--            <h1>Services</h1>-->
+<!--            <h5> Feel free to browse our services and learn how they can impact your business.</h5>-->
+<!--            {% endif %}-->
+<!--        </div>-->
+<!--    </div>-->
+</div>

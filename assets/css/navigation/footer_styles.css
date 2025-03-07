@@ -1,0 +1,30 @@
+/*.footer {*/
+/*    padding: var(--section-padding) 0 var(--section-padding) 0;*/
+/*    background-color: var(--color-primary-bg);*/
+/*    color: var(--color-primary-text);*/
+/*}*/
+
+/*.footer .row {*/
+/*    padding-bottom: 18px;*/
+/*}*/
+
+/*.footer a, .bottom a {*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*    font-family: inherit;*/
+/*    font-size: inherit;*/
+/*}*/
+
+/*.bottom {*/
+/*    background-color: var(--color-primary-bg-2);*/
+/*    color: var(--color-primary-text);*/
+/*}*/
+
+/*.menu-bottom {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.scroll-to-about {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
