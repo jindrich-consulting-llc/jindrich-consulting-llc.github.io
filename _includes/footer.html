@@ -1,67 +1,33 @@
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="footer-info">
-                    <h2>Jekyll Advance</h2>
-                    <p>Advance is a multi-purpose premium Jekyll theme. Modern design, clean code and highly
-                        configurable.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-8 mt-gutter mt-md-0">
-                <div class="row justify-content-end">
-                    <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                        <div class="footer-menu">
-                            <h3>Product</h3>
-                            <div class="menu-footer">
-                                <ul>
-                                    <li class="">
-                                        <a href="/">Home</a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/services/">Services</a>
-                                    </li>
-                                </ul>
-                            </div>
+<footer class="footer">
 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                        <div class="footer-menu">
-                            <h3>Company</h3>
-                            <div class="menu-footer">
-                                <ul>
-                                    <li class="active">
-                                        <a href="{{ '/about' | relative_url }}">About</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="scroll-to-about" href="/contact-us">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
+    <div class="top">
 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                        <div class="footer-menu">
-                            <h3>Other</h3>
-                            <div class="menu-footer">
-                                <ul>
-                                    <li class="">
-                                        <a href="/privacy-policy/">Privacy Policy</a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/terms-and-conditions/">Terms and Conditions</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="footer-menu-container">
+            <div class="footer-menu">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="row justify-content-end mt-2">
-            <div class="col-12 col-md-4">
+
+            <div class="footer-menu">
+                <h3>Company</h3>
+                <ul>
+                    <li class="active"><a href="{{ '/about' | relative_url }}">About</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <h3>Other</h3>
+                <ul>
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="/terms-and-conditions/">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
                 <h3>Contact Us</h3>
                 <div class="contact">
                     <div class="contact-email">
@@ -74,13 +40,11 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-</div>
-<div class="bottom">
-    <div class="container">
-        <div class="menu-bottom">
-            <div class="copyright">© 2025 {{ site.company.name }}</div>
-        </div>
+
+    <div class="bottom">
+        <div class="copyright">© 2025 {{ site.company.name }}</div>
     </div>
-</div>
+</footer>
