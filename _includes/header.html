@@ -17,11 +17,13 @@
             <!-- Services Dropdown -->
             <li class="nav-item dropdown {% if page.url == '/services' %}active{% endif %}">
                 <a class="nav-link" href="/services">Services</a>
-                <ul class="dropdown-menu">
-                    {% for service in site.data.services %}
-                    <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
-                    {% endfor %}
-                </ul>
+                <div class="dropdown-menu">
+                    <ul class="dropdown-item-container">
+                        {% for service in site.data.services %}
+                        <li><a class="dropdown-item" href="{{ service.url }}">{{ service.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </li>
 
             <!-- Contact -->
