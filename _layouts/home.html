@@ -14,60 +14,60 @@
     <link href="../assets/css/navigation/footer_styles.css" rel="stylesheet">
 
 </head>
-<body id="body">
+<body>
 
 {% include header.html %}
 
-<!--<main>-->
+<main>
 
-<!--    &lt;!&ndash; Our Services &ndash;&gt;-->
-<!--    <div class="icon-card-container">-->
-<!--        {% for service in site.data.services %}-->
-<!--        <div class="icon-card-card">-->
-<!--            <div class="card-icon">-->
-<!--                <img src="{{ service.icon }}" alt="{{ service.name }} icon">-->
-<!--            </div>-->
-<!--            <div class="card-content">-->
-<!--                <h2 class="card-title">-->
-<!--                    <a href="{{ service.url }}">{{ service.name }}</a>-->
-<!--                </h2>-->
-<!--                <p>{{ service.description }}</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        {% endfor %}-->
-<!--    </div>-->
+    <!-- Our Services -->
+    <div class="icon-card-container">
+        {% for service in site.data.services %}
+        <div class="icon-card-card">
+            <div class="card-icon">
+                <img src="{{ service.icon }}" alt="{{ service.name }} icon">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">
+                    <a href="{{ service.url }}">{{ service.name }}</a>
+                </h2>
+                <p>{{ service.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 
-<!--    &lt;!&ndash; About &ndash;&gt;-->
-<!--    <div id="about" class="split-info-container">-->
-<!--        <div class="info-img">-->
-<!--            <img src="../assets/img/Gemini_Generated_Image_Food_Bank.jpeg" alt="Food Bank">-->
-<!--        </div>-->
-<!--        <div class="info-content">-->
-<!--            <h1>About Us</h1>-->
-<!--            <p>We are a consulting firm with a strong foundation in-->
-<!--                software engineering and has since pivoted to specialize in data engineering and analytics. The-->
-<!--                focus is on uncovering actionable insights that empower organizations to realize their full-->
-<!--                potential.-->
-<!--            <p>-->
-<!--            <p>The firm is particularly committed to projects that create a lasting, positive impact on-->
-<!--                communities and deliver measurable results. To further that mission, flexible pricing options-->
-<!--                are-->
-<!--                available for nonprofits facing budget constraints, reflecting the belief that impactful-->
-<!--                technology-->
-<!--                should be accessible to all.</p>-->
-<!--        </div>-->
-<!--    </div>-->
+    <!-- About -->
+    <div id="about" class="split-info-container">
+        <div class="info-img">
+            <img src="../assets/img/Gemini_Generated_Image_Food_Bank.jpeg" alt="Food Bank">
+        </div>
+        <div class="info-content">
+            <h1>About Us</h1>
+            <p>We are a consulting firm with a strong foundation in
+                software engineering and has since pivoted to specialize in data engineering and analytics. The
+                focus is on uncovering actionable insights that empower organizations to realize their full
+                potential.
+            <p>
+            <p>The firm is particularly committed to projects that create a lasting, positive impact on
+                communities and deliver measurable results. To further that mission, flexible pricing options
+                are
+                available for nonprofits facing budget constraints, reflecting the belief that impactful
+                technology
+                should be accessible to all.</p>
+        </div>
+    </div>
 
-<!--    &lt;!&ndash; Contact Us &ndash;&gt;-->
-<!--    <div class="info-container">-->
-<!--        <div class="info">-->
-<!--            <h1>Let's Connect!</h1>-->
-<!--            <p>Contact us today and let’s explore how we can work together.</p>-->
-<!--            <a href="/contact-us" class="button">Contact Us</a>-->
-<!--        </div>-->
-<!--    </div>-->
+    <!-- Contact Us -->
+    <div class="info-container">
+        <div class="info">
+            <h1>Let's Connect!</h1>
+            <p>Contact us today and let’s explore how we can work together.</p>
+            <a href="/contact-us" class="button">Contact Us</a>
+        </div>
+    </div>
 
-<!--</main>-->
+</main>
 
 {% include footer.html %}
 
