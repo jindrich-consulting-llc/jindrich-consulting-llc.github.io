@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Internal styles -->
+    <link href="../assets/css/global_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/section_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/icon_card_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/split_info_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/info_styles.css" rel="stylesheet">
+    <link href="../assets/css/navigation/header_styles.css" rel="stylesheet">
+    <link href="../assets/css/navigation/footer_styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+{% include header.html %}
+
+<main>
+
+    <!-- Sub-services -->
+    <div class="section">
+        <div class="icon-card-container">
+
+            {% if page.url == '/services/data-analytics' %}
+
+            {% for service in site.data.data_analytics.services %}
+            <div class="icon-card-card">
+                <div class="card-icon">
+                    <img src="{{ service.icon }}" alt="{{ service.name }} icon">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">
+                        <a>{{ service.name }}</a>
+                    </h2>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% elsif page.url == '/services/data-engineering' %}
+
+            {% for service in site.data.data_engineering.services %}
+            <div class="icon-card-card">
+                <div class="card-icon">
+                    <img src="{{ service.icon }}" alt="{{ service.name }} icon">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">
+                        <a>{{ service.name }}</a>
+                    </h2>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% endif %}
+
+        </div>
+    </div>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>

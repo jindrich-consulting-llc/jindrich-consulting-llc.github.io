@@ -39,9 +39,10 @@
 
     <!-- Banner -->
     <div class="banner">
+
         {% if page.url == '/' %}
         <div class="banner-gradient">
-            <img src="../assets/img/Gemini_Generated_Image_Engineers.jpeg" alt="Engineers at Work">
+            <img src="../assets/img/banners/Gemini_Generated_Engineers.jpeg" alt="Engineers at Work">
         </div>
         <div class="banner-content">
             <h1>Curiosity and Engineering</h1>
@@ -50,22 +51,42 @@
                 and achieve your business goals.
             </h3>
         </div>
+
         {% elsif page.url == '/services' %}
         <div class="banner-gradient">
-            <img src="../assets/img/Gemini_Generated_Office_Space.jpeg" alt="Office Space">
+            <img src="../assets/img/banners/Gemini_Generated_Office_Space.jpeg" alt="Office Space">
         </div>
         <div class="banner-content">
             <h1>Services</h1>
             <h3> Feel free to browse our services and learn how they can impact your business.</h3>
         </div>
+
         {% elsif page.url == '/contact-us' %}
         <div class="banner-gradient">
-            <img src="../assets/img/Gemini_Generated_Handshake.jpeg" alt="Handshake">
+            <img src="../assets/img/banners/Gemini_Generated_Handshake.jpeg" alt="Handshake">
         </div>
         <div class="banner-content">
             <h1>Contact Us</h1>
             <h3>Have questions? Reach out via email and let's connect.</h3>
         </div>
+
+        {% elsif page.url == '/services/data-analytics' %}
+        <div class="banner-gradient">
+            <img src="../assets/img/banners/Gemini_Generated_Whiteboard_Meeting.jpeg" alt="Whiteboard Meeting">
+        </div>
+        <div class="banner-content">
+            <h1>Data Analytics</h1>
+        </div>
+
+        {% elsif page.url == '/services/data-engineering' %}
+        <div class="banner-gradient">
+            <img src="../assets/img/banners/Gemini_Generated_Server_Ports.jpeg" alt="Server Ports">
+        </div>
+        <div class="banner-content">
+            <h1>Data Engineering</h1>
+        </div>
+
         {% endif %}
+
     </div>
 </header>

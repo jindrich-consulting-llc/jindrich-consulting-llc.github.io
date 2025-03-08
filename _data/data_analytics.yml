@@ -1,0 +1,12 @@
+title: "Data Analysis"
+description: "Analyze performance and customer data to help businesses optimize strategies and drive growth."
+services:
+  - name: "Performance Tracking and KPI Reports"
+    description: "Setting up key performance indicators (KPIs) based on company objectives and creating automated, periodic reports that track these metrics."
+    icon: "../assets/img/icons/icons8-area-chart-96.png"
+  - name: "Customer Satisfaction and Survey Analysis"
+    description: "Analyzing customer feedback surveys, product reviews, or NPS (Net Promoter Score) data to understand customer satisfaction and areas for improvement."
+    icon: "../assets/img/icons/icons8-heart-96.png"
+  - name: "Descriptive Analytics and Reporting"
+    description: "Summarizing historical data using statistical methods and creating reports that describe past performance (e.g., sales performance, website traffic, customer behavior)."
+    icon: "../assets/img/icons/icons8-line-chart-96.png"
