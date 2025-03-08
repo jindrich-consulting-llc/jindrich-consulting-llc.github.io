@@ -39,23 +39,33 @@
 
     <!-- Banner -->
     <div class="banner">
+        {% if page.url == '/' %}
         <div class="banner-gradient">
-            <img src="../assets/img/Gemini_Generated_Image_Engineers.jpeg" alt="Engineers at work">
+            <img src="../assets/img/Gemini_Generated_Image_Engineers.jpeg" alt="Engineers at Work">
         </div>
         <div class="banner-content">
-            {% if page.url == '/' %}
             <h1>Curiosity and Engineering</h1>
             <h3>
                 Success starts with insight. Through data analysis and engineering, we refine strategies to drive growth
                 and achieve your business goals.
             </h3>
-            {% elsif page.url == '/services' %}
+        </div>
+        {% elsif page.url == '/services' %}
+        <div class="banner-gradient">
+            <img src="../assets/img/Gemini_Generated_Office_Space.jpeg" alt="Office Space">
+        </div>
+        <div class="banner-content">
             <h1>Services</h1>
             <h3> Feel free to browse our services and learn how they can impact your business.</h3>
-            {% elsif page.url == '/contact-us' %}
-            <h1>Contact Us</h1>
-            <h3>Please don't hesitate to reach out via email if you have any questions.</h3>
-            {% endif %}
         </div>
+        {% elsif page.url == '/contact-us' %}
+        <div class="banner-gradient">
+            <img src="../assets/img/Gemini_Generated_Handshake.jpeg" alt="Handshake">
+        </div>
+        <div class="banner-content">
+            <h1>Contact Us</h1>
+            <h3>Have questions? Reach out via email and let's connect.</h3>
+        </div>
+        {% endif %}
     </div>
 </header>
