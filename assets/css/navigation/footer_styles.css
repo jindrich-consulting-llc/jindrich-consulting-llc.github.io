@@ -1,17 +1,17 @@
 .footer {
     position: relative;
-    background-color: #2b3af7;
+    background-color: var(--color-primary-bg);
 }
 
 .footer-menu-container {
-    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: var(--spacing-80) var(--spacing-30);
 }
 
 .footer-menu ul li {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-10);
 }
 
 .footer-menu ul li a {
@@ -24,22 +24,22 @@
 }
 
 .footer-contact {
-    margin-top: 20px;
+    margin-top: var(--spacing-20);
 }
 
 .footer-contact h3 {
-    margin-top: 0;
+    margin-top: 0 var(--spacing-none);
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 10px;
+    margin-top: var(--spacing-10);
 }
 
 .contact-email, .contact-address {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-10);
 }
 
 .contact a {
@@ -50,21 +50,21 @@
 .bottom {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    background-color: #702bf7;
+    padding: var(--spacing-10) var(--spacing-none);
+    background-color: var(--color-primary-bg-2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .footer-menu-container {
         flex-direction: column;
     }
 
     .footer-menu {
         flex: 1 1 100%;
-        margin-bottom: 20px;
+        margin-bottom: var(--spacing-20);
     }
 
     .footer-contact {
-        margin-top: 20px;
+        margin-top: var(--spacing-20);
     }
 }
