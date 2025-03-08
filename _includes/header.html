@@ -45,14 +45,16 @@
         <div class="banner-content">
             {% if page.url == '/' %}
             <h1>Curiosity and Engineering</h1>
-            <h5>
-                Success starts with insight. Using data analysis and engineering, we measure progress
-                and refine strategies to drive growth. Let’s collaborate to uncover key discoveries and achieve your
-                business goals.
-            </h5>
+            <h3>
+                Success starts with insight. Through data analysis and engineering, we refine strategies to drive growth
+                and achieve your business goals.
+            </h3>
             {% elsif page.url == '/services' %}
             <h1>Services</h1>
-            <h5> Feel free to browse our services and learn how they can impact your business.</h5>
+            <h3> Feel free to browse our services and learn how they can impact your business.</h3>
+            {% elsif page.url == '/contact-us' %}
+            <h1>Contact Us</h1>
+            <h3>Please don't hesitate to reach out via email if you have any questions.</h3>
             {% endif %}
         </div>
     </div>
