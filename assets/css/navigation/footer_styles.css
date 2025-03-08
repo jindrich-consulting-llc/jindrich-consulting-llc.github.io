@@ -10,6 +10,20 @@
     padding: var(--spacing-80) var(--spacing-30);
 }
 
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-none);
+    margin: var(--spacing-none);
+}
+
 .footer-menu ul li {
     margin-bottom: var(--spacing-10);
 }
@@ -23,12 +37,8 @@
     text-decoration: underline;
 }
 
-.footer-contact {
-    margin-top: var(--spacing-20);
-}
-
 .footer-contact h3 {
-    margin-top: 0 var(--spacing-none);
+    margin-top: var(--spacing-none);
 }
 
 .contact {
