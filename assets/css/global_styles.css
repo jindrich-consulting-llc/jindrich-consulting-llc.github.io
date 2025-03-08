@@ -29,15 +29,19 @@
     --spacing-20: 20px;
     --spacing-30: 30px;
     --spacing-80: 80px;
+    --spacing-150: 150px;
 
     --border-radius: 5px;
 
     --section-padding: 80px;
     --section-margin: 180px;
 
-    --image-height-min: 300px;
-    --image-height-base: 400px;
-    --image-height-max: 600px;
+    --image-size-50: 50px;
+    --image-size-300: 300px;
+    --image-size-400: 400px;
+    --image-size-500: 500px;
+    --image-size-600: 600px;
+
 }
 
 body {

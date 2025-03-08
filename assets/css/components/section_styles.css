@@ -1,0 +1,11 @@
+.section {
+    padding: var(--spacing-150) var(--spacing-none);
+}
+
+.section.odd {
+    background-color: var(--color-base-bg);
+}
+
+.section.even{
+    background-color: var(--color-base-bg-2);
+}

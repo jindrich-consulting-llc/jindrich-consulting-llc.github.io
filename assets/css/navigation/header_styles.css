@@ -102,7 +102,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    max-height: var(--image-height-max);
+    max-height: var(--image-size-600);
     z-index: 0;
 }
 
@@ -115,7 +115,7 @@
 .banner-gradient img {
     width: 100%;
     height: auto;
-    max-height: var(--image-height-max);
+    max-height: var(--image-size-600);
     object-fit: cover;
     mix-blend-mode: overlay;
 }
@@ -125,7 +125,7 @@
     top: 40%;
     left: 10%;
     width: 100%;
-    max-width: var(--image-height-max);
+    max-width: var(--image-size-600);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

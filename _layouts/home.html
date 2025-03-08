@@ -7,6 +7,7 @@
 
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/section_styles.css" rel="stylesheet">
     <link href="../assets/css/components/icon_card_styles.css" rel="stylesheet">
     <link href="../assets/css/components/split_info_styles.css" rel="stylesheet">
     <link href="../assets/css/components/info_styles.css" rel="stylesheet">
@@ -21,24 +22,26 @@
 <main>
 
     <!-- Our Services -->
-    <div class="icon-card-container">
-        {% for service in site.data.services %}
-        <div class="icon-card-card">
-            <div class="card-icon">
-                <img src="{{ service.icon }}" alt="{{ service.name }} icon">
+    <div class="section odd">
+        <div class="icon-card-container">
+            {% for service in site.data.services %}
+            <div class="icon-card-card">
+                <div class="card-icon">
+                    <img src="{{ service.icon }}" alt="{{ service.name }} icon">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">
+                        <a href="{{ service.url }}">{{ service.name }}</a>
+                    </h2>
+                    <p>{{ service.description }}</p>
+                </div>
             </div>
-            <div class="card-content">
-                <h2 class="card-title">
-                    <a href="{{ service.url }}">{{ service.name }}</a>
-                </h2>
-                <p>{{ service.description }}</p>
-            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <!-- About -->
-    <div id="about" class="split-info-container">
+    <div id="about" class="split-info-container" style="background-color: var(--color-base-bg-2)">
         <div class="info-img">
             <img src="../assets/img/Gemini_Generated_Image_Food_Bank.jpeg" alt="Food Bank">
         </div>
@@ -59,11 +62,13 @@
     </div>
 
     <!-- Contact Us -->
-    <div class="info-container">
-        <div class="info">
-            <h1>Let's Connect!</h1>
-            <p>Contact us today and let’s explore how we can work together.</p>
-            <a href="/contact-us" class="button">Contact Us</a>
+    <div class="section odd">
+        <div class="info-container">
+            <div class="info">
+                <h1>Let's Connect!</h1>
+                <p>Contact us today and let’s explore how we can work together.</p>
+                <a href="/contact-us" class="button">Contact Us</a>
+            </div>
         </div>
     </div>
 

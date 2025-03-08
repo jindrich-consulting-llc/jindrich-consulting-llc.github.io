@@ -1,12 +1,11 @@
 .split-info-container {
     display: flex;
-    background-color: #702bf7;
 }
 
 .split-info-container .info-img {
     flex: 1;
     height: auto;
-    max-height: 600px;
+    max-height: var(--image-size-500);
     overflow: hidden;
 }
 
@@ -21,13 +20,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 30px 0 30px;
+    padding: var(--spacing-none) var(--spacing-30) var(--spacing-30);
 }
 
 .split-info-container .info-content h1 {
-    font-weight: 600;
+    font-weight: var(--font-weight-600);
 }
 
 .split-info-container .info-content p {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-10);
 }
