@@ -7,6 +7,7 @@
 
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/section_styles.css" rel="stylesheet">
     <link href="../assets/css/components/card_styles.css" rel="stylesheet">
     <link href="../assets/css/components/info_styles.css" rel="stylesheet">
     <link href="../assets/css/navigation/header_styles.css" rel="stylesheet">
@@ -20,29 +21,36 @@
 <main>
 
     <!-- Our Services -->
-    <div class="card-container">
-        {% for service in site.data.services %}
-        <div class="card">
-            <div class="card-img">
-                <img src="{{ service.image }}" alt="{{ service.name }} image">
-                <a href="{{ service.url }}"></a>
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">
-                    <a href="{{ service.url }}">{{ service.name }}</a>
-                </h2>
-                <p>{{ service.description }}</p>
-            </div>
+    <div class="section odd">
+        <div class="section-title">
+            <h1>Our Services</h1>
         </div>
-        {% endfor %}
+        <div class="card-container">
+            {% for service in site.data.services %}
+            <div class="card">
+                <div class="card-img">
+                    <img src="{{ service.image }}" alt="{{ service.name }} image">
+                    <a href="{{ service.url }}"></a>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">
+                        <a href="{{ service.url }}">{{ service.name }}</a>
+                    </h2>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
     <!-- Contact Us -->
-    <div class="info-container">
-        <div class="info">
-            <h2>Let's Connect!</h2>
-            <p>Contact us today and let’s explore how we can work together.</p>
-            <a href="/contact-us" class="button">Contact Us</a>
+    <div class="section even">
+        <div class="info-container">
+            <div class="info">
+                <h2>Let's Connect!</h2>
+                <p>Contact us today and let’s explore how we can work together.</p>
+                <a href="/contact-us" class="button">Contact Us</a>
+            </div>
         </div>
     </div>
 

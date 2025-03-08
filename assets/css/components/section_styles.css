@@ -12,6 +12,6 @@
     background-color: var(--color-base-bg);
 }
 
-.section.even{
+.section.even {
     background-color: var(--color-base-bg-2);
 }

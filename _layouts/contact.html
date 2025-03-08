@@ -7,6 +7,7 @@
 
     <!-- Internal styles -->
     <link href="../assets/css/global_styles.css" rel="stylesheet">
+    <link href="../assets/css/components/section_styles.css" rel="stylesheet">
     <link href="../assets/css/components/form_styles.css" rel="stylesheet">
     <link href="../assets/css/navigation/header_styles.css" rel="stylesheet">
     <link href="../assets/css/navigation/footer_styles.css" rel="stylesheet">
@@ -19,44 +20,46 @@
 <main>
 
     <!-- Contact Form -->
-    <div class="form-container">
+    <div class="section odd">
+        <div class="form-container">
 
-        <div class="form-info">
-            <h1>Let's Connect!</h1>
-            <p>Contact us today and let’s explore how we can work together.</p>
+            <div class="form-info">
+                <h1>Let's Connect!</h1>
+                <p>Contact us today and let’s explore how we can work together.</p>
+            </div>
+
+            <form class="form">
+
+                <!-- Name input -->
+                <div class="form-input">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name"/>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-input">
+                    <label>Email address</label>
+                    <input type="email" placeholder="Your Email"/>
+                </div>
+
+                <!-- Subject input -->
+                <div class="form-input">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Email Subject"/>
+                </div>
+
+                <!-- Message input -->
+                <div class="form-input">
+                    <label>Message</label>
+                    <textarea rows="8" placeholder="Message"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button class="button">Submit</button>
+
+            </form>
+
         </div>
-
-        <form class="form">
-
-            <!-- Name input -->
-            <div class="form-input">
-                <label>Name</label>
-                <input type="text" placeholder="Your Name"/>
-            </div>
-
-            <!-- Email input -->
-            <div class="form-input">
-                <label>Email address</label>
-                <input type="email" placeholder="Your Email"/>
-            </div>
-
-            <!-- Subject input -->
-            <div class="form-input">
-                <label>Subject</label>
-                <input type="text" placeholder="Email Subject"/>
-            </div>
-
-            <!-- Message input -->
-            <div class="form-input">
-                <label>Message</label>
-                <textarea rows="8" placeholder="Message"></textarea>
-            </div>
-
-            <!-- Submit button -->
-            <button class="button">Submit</button>
-
-        </form>
-
     </div>
 
 </main>

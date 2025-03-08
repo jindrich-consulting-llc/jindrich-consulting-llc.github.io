@@ -5,7 +5,7 @@
 .split-info-container .info-img {
     flex: 1;
     height: auto;
-    max-height: var(--image-size-500);
+    max-height: var(--size-500);
     overflow: hidden;
 }
 

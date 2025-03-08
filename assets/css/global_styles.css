@@ -28,20 +28,24 @@
     --spacing-10: 10px;
     --spacing-20: 20px;
     --spacing-30: 30px;
+    --spacing-50: 50px;
     --spacing-80: 80px;
     --spacing-150: 150px;
 
-    --border-radius: 5px;
+    --border-radius-3: 3px;
+    --border-radius-5: 5px;
+    --border-radius-8: 8px;
 
     --section-padding: 80px;
     --section-margin: 180px;
 
-    --image-size-50: 50px;
-    --image-size-300: 300px;
-    --image-size-400: 400px;
-    --image-size-500: 500px;
-    --image-size-600: 600px;
-
+    --size-40: 40px;
+    --size-50: 50px;
+    --size-200: 200px;
+    --size-300: 300px;
+    --size-400: 400px;
+    --size-500: 500px;
+    --size-600: 600px;
 }
 
 body {
@@ -67,7 +71,7 @@ ul {
     letter-spacing: 0.025em;
     font-weight: var(--font-weight-500);
     border: 1px solid transparent;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-5);
     background: var(--color-primary-bg);
     color: var(--color-primary-text);
 }

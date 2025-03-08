@@ -2,25 +2,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    background: white; /* todo: remove */
+    gap: var(--spacing-50);
 }
 
 .card {
     width: 100%;
-    max-width: 300px;
+    max-width: var(--size-300);;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 8px;
+    border-radius: var(--border-radius-8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: var(--color-base-bg-3);
 }
 
 .card-img {
     width: 100%;
-    height: 200px;
+    height: var(--size-200);
     overflow: hidden;
 }
 
@@ -41,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px 0 10px;
+    padding: var(--spacing-none) var(--spacing-10);
 }
 
 .card-content .card-title a {
@@ -50,5 +49,5 @@
 
 .card-content p {
     text-align: center;
-    margin-top: 0;
+    margin-top: var(--spacing-none);
 }
