@@ -61,7 +61,8 @@
             <img src="../assets/img/banners/Gemini_Generated_Whiteboard_Meeting.jpeg" alt="Whiteboard Meeting">
         </div>
         <div class="banner-content">
-            <h1>Data Analytics</h1>
+            <h1>{{ site.data.data_analytics.title }}</h1>
+            <h3>{{ site.data.data_analytics.description }}</h3>
         </div>
 
         {% elsif page.url == '/services/data-engineering' %}
@@ -69,7 +70,8 @@
             <img src="../assets/img/banners/Gemini_Generated_Server_Ports.jpeg" alt="Server Ports">
         </div>
         <div class="banner-content">
-            <h1>Data Engineering</h1>
+            <h1>{{ site.data.data_engineering.title }}</h1>
+            <h3>{{ site.data.data_engineering.description }}</h3>
         </div>
 
         {% endif %}
