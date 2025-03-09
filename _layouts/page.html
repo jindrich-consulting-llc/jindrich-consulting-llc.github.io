@@ -23,6 +23,17 @@
 
     <!-- Sub-services -->
     <div class="section">
+
+        {% if page.url == '/services/data-analytics' %}
+        <div class="section-title">
+            <h1>{{ site.data.data_analytics.title }} Services</h1>
+        </div>
+        {% elsif page.url == '/services/data-engineering' %}
+        <div class="section-title">
+            <h1>{{ site.data.data_engineering.title }} Services</h1>
+        </div>
+        {% endif %}
+
         <div class="icon-card-container">
 
             {% if page.url == '/services/data-analytics' %}
