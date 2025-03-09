@@ -2,17 +2,18 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 60px);
     display: flex;
-    justify-content: space-between;
+    width: calc(100% - (2 * var(--spacing-20)));
+    justify-content: space-evenly;
     align-items: center;
-    padding: var(--spacing-none) var(--spacing-30);
+    padding: var(--spacing-8) var(--spacing-none) ;
     color: var(--color-primary-text);
     z-index: 10;
 }
 
 .logo-img {
-    box-shadow: 0 6px 25px 5px rgba(255, 255, 255, 0.2);
+
+    padding-left: var(--spacing-150);
 }
 
 .logo-img a {
@@ -21,6 +22,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 0 6px 25px 5px rgba(255, 255, 255, 0.2);
 }
 
 .logo-img a img {
@@ -31,12 +33,15 @@
 
 .nav-list {
     flex: 1;
+    margin: 0;
+    padding: var(--spacing-none) var(--spacing-150);
     display: flex;
     justify-content: flex-end;
+    gap: var(--spacing-30);
 }
 
 .nav-item {
-    padding: var(--spacing-30);
+    padding: var(--spacing-10);
     font-size: var(--font-size-base);
 }
 
@@ -127,11 +132,10 @@
 
 .banner-content {
     position: absolute;
-    top: 40%;
-    left: 10%;
-    width: 100%;
-    max-width: var(--size-500);
+    top: 30%;
     display: flex;
+    padding: 0 var(--spacing-150);
+    max-width: 65ch;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 1;
